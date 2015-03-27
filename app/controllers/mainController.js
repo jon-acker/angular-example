@@ -3,5 +3,5 @@
 angular.module('testApp')
 
     .controller('mainController', ['$scope', function($scope) {
-        $scope.quantity = 10;
+        $scope.product = { quantity: 10 };
     }]);
