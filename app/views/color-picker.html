@@ -1,1 +1,5 @@
-<button ng-repeat="color in colors" class="btn-default btn-xs">{{ color }}</button>
+    <button ng-repeat="color in colors" class="btn-default btn-xs" ng-click="changeColor(color)">{{ color }}</button>
+
+    <div style="background: {{ chosenColor }}; width: 100px; height: 100px">
+
+    </div>

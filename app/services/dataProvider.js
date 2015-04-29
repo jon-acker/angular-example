@@ -4,11 +4,13 @@ angular.module('testApp').factory('dataProvider', function() {
     var products = [
         {
             name: 'DVD Player',
-            id: 1
+            id: 1,
+            price: 10
         },
         {
             name: 'CD Player',
-            id: 2
+            id: 2,
+            price: 12
         }
     ];
 

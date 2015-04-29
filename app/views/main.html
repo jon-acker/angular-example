@@ -1,13 +1,15 @@
 <h1>Main view</h1>
-<a class="btn btn-default btn-xs" href="#list" role="button">List View</a>
+<a class="btn btn-default btn-xs" href="#list" role="button">Show List View</a>
 
 <div class="input-group">
+    <p>{{ product.name }}</p>
+    <p>&pound;{{ product.price }}</p>
     <label>Quantity</label>
     <input class="form-control" type="number" ng-model="product.quantity">
 </div>
 
 <p>
-    <div class="h5">Cost ex VAT: {{ product.quantity * 12 }}</div>
+    <div class="h5">Total cost: {{ product.quantity * product.price }}</div>
 </p>
 
 
